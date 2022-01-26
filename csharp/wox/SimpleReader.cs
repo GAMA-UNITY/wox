@@ -872,7 +872,9 @@ namespace wox.serial
                 //Console.Out.WriteLine("type: " + xob.GetAttribute(TYPE));
                 //Type typeObject = Type.GetType(xob.GetAttribute(TYPE));
                 // codelion: use dotnettype instead
-                Type typeObject = Type.GetType(xob.GetAttribute(DOTNETTYPE));  
+                //Type typeObject = Type.GetType(xob.GetAttribute(DOTNETTYPE));
+                
+                Type typeObject = Type.GetType(xob.GetAttribute(TYPE));
                 //Console.Out.WriteLine("typeObject: " + typeObject);
                 //checking if the type is not null
                 if (typeObject == null)
